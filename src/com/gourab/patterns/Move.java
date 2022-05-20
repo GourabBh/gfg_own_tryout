@@ -1,5 +1,11 @@
 package com.gourab.patterns;
-
+/**
+ * 
+ * @author Gourab Bhattacharjee
+ * <p>
+ * Enum for moves
+ * <p>
+ */
 public enum Move {
 	
 	RIGHT('R'),
