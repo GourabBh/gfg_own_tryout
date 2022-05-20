@@ -25,8 +25,8 @@ public class DiamondStarPattern {
 			}
 			System.out.println();
 		}
-		if (a-1 == n) {
-			for (a = 1; a <= n - 1; a++) {
+		//Printing the lower half of diamond
+		for (a = 1; a <= n - 1; a++) {
 				for (space = 1; space < a; space++) {
 					System.out.print(" ");
 				}
@@ -35,7 +35,6 @@ public class DiamondStarPattern {
 				}
 				System.out.println();
 			}
-		}
 	}
 	
 	public static void main(String[] args) {
