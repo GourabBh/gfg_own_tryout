@@ -1,5 +1,9 @@
 package com.gourab.patterns;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /**
  * 
  * @author Gourab Bhattacharjee
@@ -35,6 +39,14 @@ public class DiamondStarPattern {
 	}
 	
 	public static void main(String[] args) {
-		diamond(5);
+		System.out.print("Enter a number: ");
+		try {
+			int n = Integer.parseInt(new BufferedReader(new InputStreamReader(System.in)).readLine());
+			diamond(n);
+		} catch (NumberFormatException e) {
+			System.out.println("NumberFormat exception: "+e.getMessage());
+		} catch (IOException e) {
+			System.out.println("General exception: "+e.getMessage());
+		}
 	}
 }
